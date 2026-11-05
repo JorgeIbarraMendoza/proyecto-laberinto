@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+}
+
+.laberinto {
+    position: relative;
+    width: 768px;
+    height: 768px;
+    background-image: url("../imagenes/laberinto.jpg");
+}
+
+.figura {
+    position: absolute;
+    left: 335px;
+    top: 65px;
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+    margin-top: -30px;
+    animation: desplazo 17s infinite;
+}
+
+@keyframes desplazo {
+    0%, 5% {
+        left: 335px;
+        top: 65px;
+        border-radius: 0;
+        background: #08d7c3;
+        transform: none;
+    }
+
+    8% {
+        left: 335px;
+        top: 154px;
+        border-radius: 50%;
+    }
+
+    14% {
+        left: 520px;
+        top: 154px;
+    }
+
+    17% {
+        left: 520px;
+        top: 244px;
+    }
+
+    20% {
+        left: 430px;
+        top: 244px;
+    }
+
+    26% {
+        left: 430px;
+        top: 430px;
+    }
+
+    32% {
+        left: 614px;
+        top: 430px;
+    }
+
+    38% {
+        left: 614px;
+        top: 614px;
+    }
+
+    44% {
+        left: 430px;
+        top: 614px;
+    }
+
+    47% {
+        left: 430px;
+        top: 520px;
+    }
+
+    50% {
+        left: 335px;
+        top: 520px;
+    }
+
+    53% {
+        left: 335px;
+        top: 614px;
+    }
+
+    56% {
+        left: 244px;
+        top: 614px;
+    }
+
+    62% {
+        left: 244px;
+        top: 428px;
+    }
+
+    65% {
+        left: 154px;
+        top: 428px;
+    }
+
+    68% {
+        left: 154px;
+        top: 520px;
+    }
+
+    71% {
+        left: 65px;
+        top: 520px;
+        border-radius: 50%;
+        background: #08d7c3;
+        transform: none;
+    }
+
+    73% {
+        left: 65px;
+        top: 520px;
+        border-radius: 0;
+        background: url("../imagenes/estrella-amarilla.png");
+        background-size: 60px 60px;
+    }
+
+    78% {
+        background: url("../imagenes/estrella-amarilla.png");
+        background-size: 60px 60px;
+    }
+
+    85% {
+        background: url("../imagenes/estrella-rosa.png");
+        background-size: 60px 60px;
+    }
+
+    88% {
+        left: 65px;
+        top: 65px;
+        background: url("../imagenes/estrella-rosa.png");
+        background-size: 60px 60px;
+    }
+
+    95% {
+        background: url("../imagenes/estrella-azul.png");
+        background-size: 60px 60px;
+    }
+
+    97%, 100% {
+        left: 335px;
+        top: 65px;
+        background: url("../imagenes/estrella-azul.png");
+        background-size: 60px 60px;
+        transform: rotate(1440deg);
+    }
+}
